@@ -13,7 +13,7 @@
             var testX = 1;
             var pass1 = prompt('请输入密码', '');
             while (testX < 3) {
-                if (pass1 == "93454983") { //初始密码
+                if (pass1 == "123456") { //初始密码
                     alert('密码正确!');
                     break;
                 }else{
@@ -21,7 +21,7 @@
                     var pass1 = prompt('密码错误!请重新输入:');
                 }
             }
-            if (pass1 != '93454983' && testX == 3){
+            if (pass1 != '123456' && testX == 3){
                     alert('密码错误，页面即将关闭.');
                     //window.parent.opener=null;
                     //window.parent.open('','_self');
@@ -81,15 +81,16 @@
                 <input id="name" class="input-box" type="text" placeholder="姓名">
             </li>
             <li type="none">
+                <p><strong>教学系</strong></p>
+                <input id="name" class="input-box" type="text" placeholder="教学系">
+            </li>
+            <li type="none">
+                <p><strong>专业</strong></p>
+                <input id="name" class="input-box" type="text" placeholder="专业">
+            </li>
+            <li type="none">
                 <p><strong>班级</strong></p>
-                <!--
-                <input id="class" class="input-box" type="text" placeholder="班级">
-                -->
-                <select id="class" class="input-box select">
-                    <option style="display: none;"></option>
-                    <option value="20-3">20-3</option>
-                    <option value="20-4">20-4</option>
-                </select>
+                <input id="name" class="input-box" type="text" placeholder="班级">
             </li>
             <li type="none">
                 <p><strong>学号</strong></p>
@@ -263,7 +264,7 @@
         })
     }
 </script>
-<script src="/jqd/rolldate.min.js"></script>
+<script src="./rolldate.min.js"></script>
 <script src="./encode.js"></script>
 
 </html>
